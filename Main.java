@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         //create accounts in this space
-        bankAccount obj1 = new bankAccount("Umar", "UR140900");
+        bankAccount obj1 = new bankAccount("customerName", "customerID");
         obj1.showMenu();
     }
 }
@@ -24,7 +24,6 @@ class bankAccount {
     bankAccount(String cusname, String cusid) {
         customerName = cusname;
         customerID = cusid;
-        // outlines what to include in the object when a bankAccount object is created
     }
 
     void deposit(int amount) {
@@ -69,7 +68,7 @@ class bankAccount {
             System.out.println("\n");
 
 
-            switch (option) { //fix all options so that if anything follows the byte (ie a followed by poo or a space an error is returned
+            switch (option) {
                 case 'a':
                 case 'A':
                     System.out.println("==========");
@@ -79,7 +78,7 @@ class bankAccount {
                     break;
 
                 case 'B':
-                case 'b': // fix so that if anything but an integer is entered, user is prompted to enter an amount
+                case 'b': 
                     System.out.println("==========");
                     System.out.println("Enter an amount to deposit");
                     System.out.println("==========");
@@ -107,7 +106,7 @@ class bankAccount {
                     break;
 
                 case 'C':
-                case 'c': // fix so that if anything but an integer is entered, user is prompted to enter an amount
+                case 'c': 
                     System.out.println("==========");
                     System.out.println("Enter an amount to withdraw");
                     System.out.println("==========");
